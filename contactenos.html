@@ -1,14 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Contáctenos - Tienda de Maquillaje</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <h1>Pagina de contactenos</h1>
-    <p>correo: contactenos@gmail.com</p>
-    <p>telefono: 3124255151</p>
-    <a href="index.html">volver al inicio</a>
+    <header>
+        <h1>💄 Tienda de Maquillaje</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="contactenos.html" class="activo">Contáctenos</a></li>
+                <li><a href="#" id="carrito-btn">🛒 Carrito (<span id="carrito-contador">0</span>)</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Contáctenos</h2>
+        <form id="form-contacto">
+            <label>Nombre:</label>
+            <input type="text" id="nombre" required>
+
+            <label>Mensaje:</label>
+            <textarea id="mensaje" rows="5" required></textarea>
+
+            <button type="submit">Enviar por WhatsApp</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>© 2025 Tienda Glam</p>
+    </footer>
+
+    <script src="js/script.js"></script>
 </body>
 </html>

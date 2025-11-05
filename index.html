@@ -1,15 +1,115 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>Mi primera pagina</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda Glam - Inicio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Bootstrap Bundle JS (incluye Popper) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
-    <a href="productos.html">productos</a>
-    <a href="contactenos.html">contactenos</a>
-    <a href="index.html">Inicio</a>
-    <h1>Productos para el hogar</h1>
-    <p>venta de productos en linea</p>
+    <header>
+        
+        <h1>💄 Tienda de Maquillaje</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="activo">Inicio</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="contactenos.html">Contáctenos</a></li>
+                <li><a href="#" id="carrito-btn">🛒 Carrito (<span id="carrito-contador">0</span>)</a></li>
+            </ul>
+            
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h2>Realza tu Belleza con Nuestros Productos</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/qB87yoYwClw?si=Y32b9I26-vD0kQO-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <p>En nuestra tienda encontrarás todo lo que necesitas para tu cuidado personal: productos faciales y corporales, artículos para el cuidado capilar, maquillaje, accesorios ¡y mucho más para resaltar tu belleza cada día!</p>
+
+        <div class="bienvenida">
+            <h2>¡Bienvenida a nuestra tienda de maquillaje!</h2>    
+            <img src="img/bienvenida.jpg" alt="tratamiento-pestañas">
+        </div>
+
+        <p>Maquillaje de alta calidad y cruelty-free 💕</p>
+        <button onclick="window.location.href='productos.html'">Ver Productos</button>
+
+        
+    </section>
+    <main>
+        <section class="quienes-somos">
+            <h2>Quiénes Somos</h2>
+            <p>Somos una tienda especializada en maquillaje profesional y de uso diario, creada por amantes de la belleza y el cuidado personal. Nuestro objetivo es ayudarte a resaltar lo mejor de ti.</p>
+        </section>
+
+        <section class="mision">
+            <h2>Nuestra Misión</h2>
+            <p>Inspirar confianza y autenticidad a través del maquillaje, ofreciendo productos accesibles, seguros y de alta calidad.</p>
+        </section>
+        <div id="miCarrusel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+            <div class="carousel-item active">
+            <img src="img/ondas.jpg" class="d-block w-100" alt="Producto 1">
+        </div>
+
+        <div class="carousel-item">
+            <img src="img/tienda.jpg" class="d-block w-100" alt="Producto 2">
+        </div>
+
+        <div class="carousel-item">
+            <img src="img/tintamelody.jpg" class="d-block w-100" alt="Producto 3">
+        </div>
+        <div class="carousel-item">
+            <img src="img/tratamiento-pestañas.jpg" class="d-block w-100" alt="Producto 2">
+        </div>
+
+        <div class="carousel-item">
+            <img src="img/cepillo.jpg" class="d-block w-100" alt="Producto 3">
+        </div>
+    </div>
+
+    <!-- Controles -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#miCarrusel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#miCarrusel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Siguiente</span>
+    </button>
+
+    <!-- Indicadores -->
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#miCarrusel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#miCarrusel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#miCarrusel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#miCarrusel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        <button type="button" data-bs-target="#miCarrusel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+    </div>
+    </div>
+
+    </main>
+
+    <footer>
+    
+        <div class="texto-columnas">
+        <h4>Dirección</h4>
+        <p>tiendademaquillaje@gmail.com</p>
+        <p>San Vicente de Chucurí</p>
+        <p>Calle 15 #18-34, Buenos aires</p>
+        <p>Tel: 3142425769</p>
+        <h4>Horarios de atención</h4>
+        <p>Lunes a vienes de 8:00 am a 6:00 pm</p>
+        <p>Sabados de 9:00 am a 4:00 pm</p>
+
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
