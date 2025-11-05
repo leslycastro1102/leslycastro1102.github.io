@@ -1,0 +1,169 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #fff0f5;
+    color: #444;
+}
+
+header {
+    background: #ec5da5;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+}
+
+.bienvenida{
+    background: white;
+    color: palevioletred;
+    border-radius: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-left: 1px;
+    margin-right: 1px;
+    
+}
+.bienvenida img{
+    width: 50%;
+    border-radius: 10px;
+}
+
+
+nav ul {
+    list-style: none;
+    margin: 10px 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a.activo {
+    text-decoration: underline;
+}
+
+.hero {
+    background: linear-gradient(to right, #ffb6c1, #ff69b4);
+    color: white;
+    text-align: center;
+    padding: 20px 20px;
+}
+
+.hero button {
+    background: white;
+    color: #ff1493;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 20px;
+}
+
+.hero button:hover {
+    background: #ffe4ec;
+}
+
+main {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 39px;
+}
+
+.producto {
+    background: rgb(231, 201, 227);
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 15px;
+    width: 200px;
+    box-shadow: 8 2px 5px rgba(0,0,0,0.1);
+    transform: scale(1.09);
+    
+}
+
+.producto img{
+    width: 100%;
+    border-radius: 10px;
+}
+.producto img:hover{
+    transform: scale(1.09);
+    filter: brightness(0.7);
+}
+
+.btn-carrito {
+    background: #ff69b4;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.btn-carrito:hover {
+    background: #ff1493;
+}
+
+form {
+    max-width: 400px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+form input, form textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+form button {
+    background: #ff69b4;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+form button:hover {
+    background: #ff1493;
+}
+
+footer {
+    background: #ff69b4;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 30px;
+}
+.texto-columnas {
+    column-count: 2; 
+    column-gap: 30px; 
+}
+.carousel-item img {
+    background-color: #ffb6c1;
+    max-height: 300px;
+    width: 100px;
+    margin: 1 auto; 
+    object-fit: contain;
+    display: block;
+}
+
+
+
