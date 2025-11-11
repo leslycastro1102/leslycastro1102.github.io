@@ -1,0 +1,30 @@
+.contenedor{
+    display: flex;
+    flex-direction: column;
+    background-color: pink;
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+h1{
+    color: blueviolet;
+}
+ .formulario{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+ }
+.listatareas{
+    background-color: fuchsia;
+    margin-left: 25%;
+    margin-right: 25%;
+    padding: 10px;
+}
+ #tareasP{
+    background-color: rgb(244, 220, 232);
+    border-radius: 20px;
+
+ }

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+    <script>
+       
+        // Ejemplo de bucle for...of
+        let lista = []
+        let numeros = [10, 20, 30, 45, 47, 67, 89, 21, 34];
+        for (let numero of numeros) {
+            if(numero == 21){
+                break;
+            }
+            if(numero == 45){
+                continue;
+            }
+            lista.push(numero + 5)
+        }
+       
+        console.log(lista)
+    </script>
+</body>
+</html>

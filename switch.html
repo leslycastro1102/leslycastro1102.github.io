@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label>Dia:</label>
+    <input type="number" name="dia" id="dia" placeholder="Escribe un dia">
+    <button onclick="evaluar1()">Evaluar</button>
+
+    <script>
+
+        
+function evaluar1(){
+
+    let dia = parseInt(document.getElementById("dia").value);
+
+    switch (dia) {
+        case 1:
+            console.log("Lunes");
+            break;
+        case 2:
+            console.log("Martes");
+            break;
+        case 3:
+            console.log("Miércoles");
+            break;
+        case 4:
+            console.log("Jueves");
+            break;
+        case 5:
+            console.log("Viernes")
+            break;
+        case 6:
+        case 7:
+            console.log("Fin de semana");
+            break;
+        default:
+            console.log("Día no válido");
+    }
+}
+
+    </script>
+</body>
+</html>
